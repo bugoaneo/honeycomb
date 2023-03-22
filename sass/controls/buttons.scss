@@ -1,0 +1,42 @@
+/*slider custome style*/
+
+:root {
+ --border: 0.2em;
+}
+
+.splide__pagination {
+ margin-top: 2em;
+ li {
+  margin: 0 0.5em;
+ }
+}
+.splide__pagination__page {
+ width: 25px;
+ height: 25px;
+ background-color: var(--accent);
+ clip-path: var(--clip);
+ &.is-active {
+  clip-path: var(--clip-carv);
+ }
+}
+
+.splide__arrows {
+ @include center(y);
+ @include row(jsb, ac);
+ width: 100%;
+ z-index: 10;
+ pointer-events: none;
+}
+
+.splide__arrow {
+ pointer-events: all;
+ &:disabled {
+  opacity: 0.5;
+ }
+ svg {
+  fill: var(--accent);
+ }
+ &--prev {
+  transform: rotate(180deg);
+ }
+}

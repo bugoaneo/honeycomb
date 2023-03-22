@@ -1,0 +1,38 @@
+:root {
+ --container: 960px;
+ --fz: 18px;
+ --ff: "Open Sans";
+ --accent-ff: "Bebas";
+ --text: #eee;
+ --accent: #f3b202;
+ --heart: #bf357d;
+ --fbk: #004d7e;
+ --twt: #3bd4e2;
+ --border: var(--border);
+ --clip: polygon(50% 0, 100% 20%, 100% 80%, 50% 100%, 0 80%, 0 20%);
+ --clip-carv: polygon(
+  50% 0,
+  100% 20%,
+  100% 80%,
+  50% 100%,
+  0 80%,
+  0 20%,
+  50% 0,
+  50% var(--border),
+  var(--border) calc(20% + var(--border) / 1.78),
+  var(--border) calc(80% - var(--border) / 1.78),
+  50% calc(100% - var(--border)),
+  calc(100% - var(--border)) calc(80% - var(--border) / 1.78),
+  calc(100% - var(--border)) calc(20% + var(--border) / 1.78),
+  50% var(--border)
+ );
+ --clip-section: polygon(
+  0% 0%,
+  100% 0%,
+  100% calc(98% - 20px),
+  calc(53% + 20px) calc(98% - 20px),
+  50% 100%,
+  calc(47% - 20px) calc(98% - 20px),
+  0px calc(98% - 20px)
+ );
+}

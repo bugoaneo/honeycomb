@@ -1,0 +1,70 @@
+html {
+  font-family: var(--ff);
+  color: var(--text);
+  @include fFS(16px, 18px, 320px, 1900px, 20px);
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+.wrapper {
+  position: relative;
+  min-width: 320px;
+  min-height: 100vh;
+  flex-grow: 1;
+  overflow: hidden;
+}
+
+.footer {
+  flex-grow: 0;
+}
+
+a {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+img {
+  display: inline-block;
+}
+
+.container {
+  max-width: var(--container);
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/*tipografic*/
+
+.section__title {
+  font-size: 4.2em;
+  font-family: var(--accent-ff);
+  color: var(--accent);
+  line-height: 0.8;
+  text-transform: uppercase;
+}
+
+.section__header {
+  margin-bottom: 3em;
+}
+
+.section__descr {
+  font-size: 1.1em;
+  line-height: 0.8;
+}
+
+/*helpers class*/
+
+.color-heart {
+  background-color: var(--heart);
+}
+
+.color-twt {
+  background-color: var(--twt);
+}
+
+.color-fbk {
+  background-color: var(--fbk);
+}
